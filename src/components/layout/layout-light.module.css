@@ -1,0 +1,65 @@
+.container {
+  margin: 3rem auto 2rem;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.header > * {
+  margin: auto 0px auto;
+}
+
+.title {
+  width: 20%;
+  font-size: 28px;
+}
+
+.title > a {
+  text-decoration: none;
+  color: #3e3e3e
+}
+
+.title > a:hover {
+  text-decoration: none;
+  color: #1e8bc9
+}
+
+.links {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.link > a {
+  text-decoration: none;
+  color: #1e8bc9;
+  margin-right: 15px;
+}
+
+.link > a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.main {
+  flex: 1;
+  margin-bottom: 200px;
+}
+
+.footer {
+  flex: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer > * {
+  margin: auto 15px auto;
+}

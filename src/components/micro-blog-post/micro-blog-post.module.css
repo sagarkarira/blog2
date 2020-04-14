@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  padding: 10px;
+  border-bottom: 2px solid #EFEFEF;
+}
+
+.avatarSection {
+  margin: 5px;
+  min-width: 10%;
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contentSection {
+  margin: 5px;
+  width: 100%;
+}
+
+.name {
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.content {
+  margin-bottom: 15px;
+  line-height: 23px;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+  white-space: pre-wrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: gray;
+}
+
+.date .tags {
+  font-size: 14px;
+  color: gray;
+}

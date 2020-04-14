@@ -1,0 +1,26 @@
+
+.container {
+  margin-top: 3rem auto;
+  max-width: 960px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.title {
+  width: 20%;
+  font-size: 28px;
+}
+
+.links {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.link {
+  margin-right: 15px;
+}

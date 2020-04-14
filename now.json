@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "env": {
+    "MONGODB_URI": "@mongo-atlas-uri",
+    "PORT": 3000,
+    "KEY": "@personal-key"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key":"Access-Control-Allow-Headers",
+          "value":"*"
+        },
+        {
+          "key": "Access-Control-Allow-Credentials",
+          "value": "true"
+        },
+        {
+          "key": "Access-Control-Max-Age",
+          "value": "86400"
+        }
+      ]
+    }
+  ]
+}

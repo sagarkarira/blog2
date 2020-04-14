@@ -1,0 +1,14 @@
+
+.postSection {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.date {
+  color: gray;
+  width: 20%;
+}
+
+.title {
+  width: 60%;
+}
