@@ -1,11 +1,7 @@
 const { connectToDatabase } = require('./_mongo');
 
 module.exports = async (req, res) => {
-  const {
-    name,
-    content,
-    tags
-  } = req.body;
+  const { name, content, tags } = req.body;
 
   const db = await connectToDatabase(process.env.MONGODB_URI);
   const collection = await db.collection('microblog');
@@ -21,6 +17,6 @@ module.exports = async (req, res) => {
       post,
     },
     status: 201,
-    message: 'Created a new post successfully'
+    message: 'Created a new post successfully',
   });
-}
+};

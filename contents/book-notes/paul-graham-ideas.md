@@ -1,6 +1,6 @@
 ---
-title: "Paul Graham Ideas"
-date: "2019-01-01"
+title: 'Paul Graham Ideas'
+date: '2019-01-01'
 section: 'book-notes'
 tags: ['notes', 'startup']
 ---
@@ -15,4 +15,3 @@ Orignal Article: [Ideas for startups?](http://paulgraham.com/ideas.html)
 - I find that to have good ideas I need to be working on some problem. You can't start with randomness. You have to start with a problem, then let your mind wander just far enough for new ideas to form.
 - Finding the problem intolerable and feeling it must be possible to solve it. Simple as it seems, that's the recipe for a lot of startup ideas.
 - So if you want to start a startup, you can take almost any existing technology produced by a big company, and assume you could build something way easier to use.
-

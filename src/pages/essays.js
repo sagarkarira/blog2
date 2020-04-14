@@ -1,8 +1,8 @@
-import React from "react"
-import { Layout } from "../components/layout/layout"
-import { graphql, Link } from "gatsby"
+import React from 'react';
+import Layout from '../components/layout/layout';
+import { graphql, Link } from 'gatsby';
 
-export default ({data}) => (
+export default ({ data }) => (
   <div>
     <Layout>
       {/* <h4>{data.allMarkdownRemark.totalCount} Book Notes</h4> */}
@@ -16,13 +16,14 @@ export default ({data}) => (
       ))}
     </Layout>
   </div>
-)
-
+);
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }
-      filter: {frontmatter: {section: {eq: "essays"}}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { section: { eq: "essays" } } }
+    ) {
       totalCount
       edges {
         node {
@@ -42,4 +43,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

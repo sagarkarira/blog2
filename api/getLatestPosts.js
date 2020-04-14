@@ -7,8 +7,9 @@ module.exports = async (req, res) => {
 
   const db = await connectToDatabase(process.env.MONGODB_URI);
   const collection = await db.collection('microblog');
-  const posts = await collection.find({})
-    .sort({ createdAt : -1 })
+  const posts = await collection
+    .find({})
+    .sort({ createdAt: -1 })
     .limit(limitVal)
     .skip(skipVal)
     .toArray();
@@ -20,6 +21,6 @@ module.exports = async (req, res) => {
       totalPosts,
     },
     status: 200,
-    message: 'Feteched successfully'
+    message: 'Feteched successfully',
   });
-}
+};

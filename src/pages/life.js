@@ -1,9 +1,9 @@
-import React from "react"
-import { Layout } from "../components/layout/layout"
-import { graphql, Link } from "gatsby"
-import styles from "./life.module.css"
+import React from 'react';
+import Layout from '../components/layout/layout';
+import { graphql, Link } from 'gatsby';
+import styles from './life.module.css';
 
-export default ({data}) => (
+export default ({ data }) => (
   <div>
     <Layout>
       <h3>{data.allMarkdownRemark.totalCount} Life Posts</h3>
@@ -17,13 +17,14 @@ export default ({data}) => (
       ))}
     </Layout>
   </div>
-)
-
+);
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }
-      filter: {frontmatter: {section: {eq: "life"}}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { section: { eq: "life" } } }
+    ) {
       totalCount
       edges {
         node {
@@ -43,4 +44,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

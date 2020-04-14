@@ -1,9 +1,9 @@
 ---
 title: What gives your life a meaning ?
-date: "2019-05-01T08:38:04.355Z"
-description: ""
-tags: ["philosophy", "life"]
-section: "life"
+date: '2019-05-01T08:38:04.355Z'
+description: ''
+tags: ['philosophy', 'life']
+section: 'life'
 ---
 
 ![](https://cdn-images-1.medium.com/max/2600/1*nGMUhpbh3Es0H3zaKjPTYA.jpeg)

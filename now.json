@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "MONGODB_URI": "@mongo-atlas-uri",
-    "PORT": 3000,
-    "KEY": "@personal-key"
-  },
   "headers": [
     {
       "source": "/(.*)",
@@ -14,8 +9,8 @@
           "value": "*"
         },
         {
-          "key":"Access-Control-Allow-Headers",
-          "value":"*"
+          "key": "Access-Control-Allow-Headers",
+          "value": "*"
         },
         {
           "key": "Access-Control-Allow-Credentials",
@@ -24,6 +19,10 @@
         {
           "key": "Access-Control-Max-Age",
           "value": "86400"
+        },
+        {
+          "key": "cache-control",
+          "value": "s-maxage=300, stale-while-revalidate"
         }
       ]
     }
